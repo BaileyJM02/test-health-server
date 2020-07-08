@@ -1,0 +1,5 @@
+language: golang
+port: 80
+run:
+ - go build
+ - ./test-health-server
