@@ -19,4 +19,4 @@ RUN go build
 EXPOSE 80
 
 # Run the executable
-CMD ["test-health-server"]
+ENTRYPOINT test-health-server
