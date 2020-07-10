@@ -39,7 +39,7 @@ func main() {
 	healthDataset := client.GetDataset("health")
 
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-		var data *[]system
+		var data *[]interface{}
 		err := healthDataset.Select(&data)
 		if err != nil {
 			fmt.Println(err)
